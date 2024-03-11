@@ -1,0 +1,150 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header > h2 {
+  text-align: center;
+} */
+h2 {
+  font-weight: normal;
+}
+p {
+  text-align: justify;
+}
+.main-container {
+  display: flex;
+}
+/* Display style */
+.container-item {
+  width: 100%;
+  padding: 50px;
+}
+
+label {
+  font-weight: bold;
+}
+.label-form {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.input-form {
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  padding: 5px;
+  border: 1px solid lightgray;
+  border-right: 0;
+  border-radius: 3px 0 0 3px;
+  min-width: 30px;
+  text-align: center;
+}
+
+/* .container-item > h2 {
+    text-align: center;
+  } */
+
+.container-result {
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 8px 24px;
+}
+
+.result-header {
+  font-weight: normal;
+  text-transform: capitalize;
+}
+.result-number {
+  font-size: 45px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.result-footer {
+  text-align: center;
+}
+
+.container-form {
+  text-align: left;
+  background-color: whitesmoke;
+  padding: 24px;
+}
+
+.form-item {
+  height: 24px;
+  border: 1px solid lightgray;
+  border-radius: 0 3px 3px 0;
+  padding: px;
+  width: 100%;
+}
+
+.container-form > div {
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 4px;
+}
+
+.btn-gray {
+  border: 1px solid lightgray;
+}
+.btn-gray:hover {
+  background-color: darkgrey;
+}
+
+.btn-solid {
+  background-color: #5cc0de;
+  color: white;
+  border: 0;
+}
+
+.btn-solid:hover {
+  background-color: skyblue;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.list-none {
+  list-style-type: none;
+  line-height: 25px;
+}
+
+.download-app {
+  text-align: center;
+}
+.btn-dark {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: black;
+  border: none;
+}
+.btn-text {
+  justify-content: start;
+}
+
+.text-box {
+  color: white;
+}
+
+.text-box .txt-1 {
+  font-size: 8px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.text-box .txt-2 {
+  font-size: 20px;
+  margin: 0;
+}
