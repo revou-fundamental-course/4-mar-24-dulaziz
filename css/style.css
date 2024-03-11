@@ -1,10 +1,7 @@
-* {
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* header > h2 {
-  text-align: center;
-} */
 h2 {
   font-weight: normal;
 }
@@ -45,19 +42,17 @@ label {
   text-align: center;
 }
 
-/* .container-item > h2 {
-    text-align: center;
-  } */
-
 .container-result {
   text-align: center;
   background-color: whitesmoke;
-  padding: 8px 24px;
+  padding: 15px 24px;
+  border-radius: 4px;
 }
 
 .result-header {
   font-weight: normal;
   text-transform: capitalize;
+  margin-top: 0;
 }
 .result-number {
   font-size: 45px;
@@ -73,14 +68,16 @@ label {
   text-align: left;
   background-color: whitesmoke;
   padding: 24px;
+  border-radius: 4px;
 }
 
 .form-item {
   height: 24px;
   border: 1px solid lightgray;
   border-radius: 0 3px 3px 0;
-  padding: px;
   width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .container-form > div {
@@ -123,6 +120,7 @@ button {
 
 .download-app {
   text-align: center;
+  margin-top: 50px;
 }
 .btn-dark {
   display: flex;
@@ -147,4 +145,13 @@ button {
 .text-box .txt-2 {
   font-size: 20px;
   margin: 0;
+}
+
+@media only screen and (max-width: 770px) {
+  .main-container {
+    display: block;
+  }
+  .container-item {
+    padding: 20px;
+  }
 }
