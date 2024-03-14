@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator BMI</title>
     <link rel="stylesheet" href="css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
       rel="stylesheet"
@@ -39,8 +40,9 @@
                 <label class="label-form">Berat badan (Kg)</label><br />
                 <div class="input-container">
                   <i class="fa-solid fa-pen icon"></i>
-                  <input type="number" id="berat-badan" class="form-item" />
+                  <input type="text" id="berat-badan" class="form-item" />
                 </div>
+                <span id="msg-bb" class="err-msg"></span>
               </div>
               <div class="input-form">
                 <label class="label-form">Usia (Tahun)</label><br />
@@ -48,6 +50,7 @@
                   <i class="fa-solid fa-pen icon"></i>
                   <input type="number" id="usia" class="form-item" />
                 </div>
+                <span id="msg-u" class="err-msg"></span>
               </div>
               <div class="input-form">
                 <label class="label-form">Tinggi badan (Cm)</label><br />
@@ -55,6 +58,7 @@
                   <i class="fa-solid fa-pen icon"></i>
                   <input type="number" id="tinggi-badan" class="form-item" />
                 </div>
+                <span id="msg-tb" class="err-msg"></span>
               </div>
               <button
                 onclick="hitungBmi()"
@@ -109,7 +113,10 @@
             <button type="button" class="btn-solid">Download hasil BMI</button>
           </section>
           <section>
-            <p>Hasil BMI diantara 23 dan 25</p>
+            <p>
+              Hasil BMI diantara <b id="dari">0</b> dan
+              <b id="hingga">0</b>
+            </p>
             <p>
               Anda berada dalam kategori overweight atau berat badan berlebih.
               Cara terbaik untuk menurunkan berat badan adalah dengan mengatur
@@ -161,8 +168,8 @@
                 <button type="button" id="calculate-button" class="btn-dark">
                   <div class="btn-logo">
                     <svg
-                      height="40px"
-                      width="40px"
+                      height="30px"
+                      width="30px"
                       version="1.1"
                       id="Layer_1"
                       xmlns="http://www.w3.org/2000/svg"
@@ -224,8 +231,8 @@
                 <button type="button" id="calculate-button" class="btn-dark">
                   <div class="btn-logo">
                     <svg
-                      width="40px"
-                      height="40px"
+                      width="30px"
+                      height="30px"
                       viewBox="-56.24 0 608.728 608.728"
                       xmlns="http://www.w3.org/2000/svg"
                     >
